@@ -18,6 +18,7 @@ export default function ProjectsSection() {
       gradient: "from-blue-500/20 to-purple-500/20",
       buttonColor: "bg-primary hover:bg-blue-600",
       githubUrl: "https://github.com/labh014",
+      liveUrl: "https://wanderlust-travelling.onrender.com/listings",
     },
     {
       title: "Gadget Galaxy",
@@ -31,6 +32,7 @@ export default function ProjectsSection() {
       gradient: "from-green-500/20 to-blue-500/20",
       buttonColor: "bg-secondary hover:bg-purple-600",
       githubUrl: "https://github.com/labh014",
+      liveUrl: "https://galaxygadget.vercel.app/",
     },
     {
       title: "Live Horizon",
@@ -44,6 +46,7 @@ export default function ProjectsSection() {
       gradient: "from-red-500/20 to-orange-500/20",
       buttonColor: "bg-accent hover:bg-cyan-400 text-black",
       githubUrl: "https://github.com/labh014",
+      liveUrl: "https://live-horizon.vercel.app/",
     },
   ];
 
@@ -121,7 +124,7 @@ export default function ProjectsSection() {
                     <div className="flex space-x-3 mt-auto">
                       <Button
                         className={`flex-1 py-2 text-sm font-medium transition-colors ${project.buttonColor}`}
-                        onClick={() => window.open("#", "_blank")}
+                        onClick={() => window.open(project.liveUrl, "_blank")}
                         data-testid={`button-view-live-${project.title.toLowerCase().replace(/\s+/g, '-')}`}
                       >
                         <ExternalLink className="w-4 h-4 mr-2" />

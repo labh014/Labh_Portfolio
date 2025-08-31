@@ -58,14 +58,6 @@ export default function Portfolio() {
       <AchievementsSection />
       <ContactSection />
       
-      {/* Footer */}
-      <footer className="py-8 px-4 border-t border-border">
-        <div className="max-w-6xl mx-auto text-center">
-          <p className="text-muted">
-            © 2025 Labh. Designed and developed with ❤️ using modern web technologies.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }
